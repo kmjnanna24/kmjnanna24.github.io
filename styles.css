@@ -61,13 +61,13 @@ p:last-of-type {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
-.project img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto 1rem auto;
+.project img{
+width: 300px;
+height: 300px;
+margin: 10px;
+border: 2px solid rgb(126, 14, 201); /* choose a color */
+display: block;
+margin: auto;
 }
 
 .project p {
