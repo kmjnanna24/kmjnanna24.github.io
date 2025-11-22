@@ -1,0 +1,239 @@
+<!-- resume_table.html
+     Created with help from ChatGPT
+     Source resume (PDF): /mnt/data/kmjn.resume.pdf
+     :contentReference[oaicite:1]{index=1}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume — Kristopher Michael Joseph Nanna</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Table-based resume styling (move to styles.css if desired) */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      margin: 24px;
+      background: #fff;
+    }
+
+    .resume-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    table.resume {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 18px;
+    }
+
+    /* left column titles */
+    table.resume td.title {
+      width: 24%;
+      vertical-align: top;
+      padding: 8px 12px 8px 0;
+      font-weight: 700;
+      color: #1f1f1f;
+    }
+
+    /* right column contents */
+    table.resume td.content {
+      width: 76%;
+      vertical-align: top;
+      padding: 8px 0;
+    }
+
+    /* subtle dividing line between sections */
+    table.resume tr + tr td.title {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 18px;
+    }
+    table.resume tr + tr td.content {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 18px;
+    }
+
+    h1.name {
+      margin: 0;
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+    }
+
+    ul {
+      margin: 6px 0 12px 18px;
+      padding: 0;
+    }
+
+    .section-sub {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .meta {
+      color: #555;
+      font-size: 0.92rem;
+      margin-bottom: 8px;
+    }
+
+    a.pdf-link {
+      display: inline-block;
+      margin-top: 10px;
+      font-weight: 600;
+      color: #0b66c3;
+      text-decoration: none;
+    }
+    a.pdf-link:hover { text-decoration: underline; }
+
+    /* responsive: stack titles above content on narrow screens */
+    @media (max-width: 680px) {
+      table.resume td.title {
+        display: block;
+        width: 100%;
+        padding-right: 0;
+        border-top: none;
+        margin-top: 12px;
+      }
+      table.resume td.content {
+        display: block;
+        width: 100%;
+        padding-top: 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-wrapper">
+    <header class="header" role="banner">
+      <h1 class="name">Kristopher Michael Joseph Nanna</h1>
+      <div class="contact">
+        1409 Whippoorwill Dr, West Columbia, SC 29169 • (864) 347-5136 •
+        <a href="mailto:kmjnanna05@icloud.com">kmjnanna05@icloud.com</a>
+      </div>
+      <a class="pdf-link" href="/mnt/data/kmjn.resume.pdf" target="_blank" rel="noopener">Download original PDF version</a>
+    </header>
+
+    <main role="main">
+      <table class="resume" aria-label="Resume table">
+        <!-- Professional Summary -->
+        <tr>
+          <td class="title">Professional Summary</td>
+          <td class="content">
+            <p>
+              Motivated and disciplined Computer Science student at the University of South Carolina and
+              Chinook Helicopter Repairer with the South Carolina Army National Guard. Demonstrates reliability,
+              mechanical and technical aptitude, and teamwork through both military service and civilian work
+              experience. Seeking opportunities to apply problem-solving and technology skills in computing and
+              engineering environments.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Education -->
+        <tr>
+          <td class="title">Education</td>
+          <td class="content">
+            <div class="section-sub">University of South Carolina — Bachelor of Science in Computer Science</div>
+            <div class="meta">Columbia, SC • Expected May 2028</div>
+            <div>
+              <strong>Relevant coursework:</strong> Algorithmic Design I, Computing in the Modern World, Pre-Calculus (in progress)
+            </div>
+
+            <div style="margin-top:12px;" class="section-sub">Boiling Springs High School — High School Diploma</div>
+            <div class="meta">Boiling Springs, SC • May 2024</div>
+            <ul>
+              <li>Beta Club and National Honor Society Member</li>
+              <li>Varsity Track & Field Athlete</li>
+            </ul>
+          </td>
+        </tr>
+
+        <!-- Experience -->
+        <tr>
+          <td class="title">Experience</td>
+          <td class="content">
+            <div class="section-sub">Oshkosh Defense — Assembly Technician</div>
+            <div class="meta">Spartanburg, SC • Apr 2025 – Aug 2025</div>
+            <ul>
+              <li>Assisted in assembly and inspection of Next Generation Delivery Vehicles (NGDV) for USPS.</li>
+              <li>Performed water tests, part removals and installations, and maintenance on prototype delivery vehicles.</li>
+              <li>Collaborated with technicians to ensure quality and precision in mechanical assembly tasks.</li>
+              <li>Gained experience working in a manufacturing and engineering team environment.</li>
+            </ul>
+
+            <div class="section-sub">SC Army National Guard — Chinook Helicopter Repairer (15U)</div>
+            <div class="meta">Greenville, SC • Sep 2024 – Present</div>
+            <ul>
+              <li>Maintain and repair CH-47 Chinook helicopters, performing inspections and troubleshooting mechanical issues.</li>
+              <li>Conduct preventative and unscheduled maintenance to ensure operational readiness and safety compliance.</li>
+              <li>Graduated Basic Combat Training (BCT) and Advanced Individual Training (AIT) as a Distinguished Honor Graduate (99 GPA).</li>
+            </ul>
+
+            <div class="section-sub">Ingles Markets — Cashier / Stock Clerk</div>
+            <div class="meta">Inman, SC • Mar 2023 – Apr 2024</div>
+            <ul>
+              <li>Operated registers, assisted customers, and managed store stock and cleanliness.</li>
+              <li>Unloaded shipments, maintained frozen inventory, and supported day-to-day retail operations.</li>
+            </ul>
+
+            <div class="section-sub">Palmetto State Landscaping and Lawncare — Laborer</div>
+            <div class="meta">Gaffney, SC • May 2020 – Aug 2023</div>
+            <ul>
+              <li>Built paver patios, installed mulch and plants, and maintained lawns and landscaping projects.</li>
+              <li>Operated construction machinery and assisted with drainage and concrete installation.</li>
+            </ul>
+          </td>
+        </tr>
+
+        <!-- Skills -->
+        <tr>
+          <td class="title">Skills</td>
+          <td class="content">
+            <strong>Technical:</strong>
+            Helicopter Maintenance, Equipment Operation, Preventative Maintenance, Assembly, Vehicle Testing,
+            Microsoft Office, Adobe Photoshop, Basic Programming (Python, C)
+            <br><br>
+            <strong>Soft skills:</strong> Problem-Solving, Team Collaboration, Leadership, Attention to Detail,
+            Adaptability, Time Management, Strong Work Ethic
+          </td>
+        </tr>
+
+        <!-- Awards -->
+        <tr>
+          <td class="title">Awards &amp; Achievements</td>
+          <td class="content">
+            <ul>
+              <li>128th Aviation Brigade Battalion Coin – Outstanding Academic Performance, Distinguished Honor Graduate (AIT, 99 GPA)</li>
+              <li>Army Certificate of Achievement – Excellence in ACFT (All events 90+ and above 98% GPA)</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <div style="margin-top:18px; text-align:center; color:#666; font-size:0.9rem;">
+        <a href="index.html">Back to home</a> •
+        <a href="/mnt/data/kmjn.resume.pdf" target="_blank" rel="noopener">Open original PDF</a>
+      </div>
+
+    </main>
+
+    <footer style="margin-top:18px; text-align:center; color:#777; font-size:0.85rem;">
+      <!-- Attribution per course guidance -->
+      Content created with help from ChatGPT.
+    </footer>
+  </div>
+</body>
+</html>
