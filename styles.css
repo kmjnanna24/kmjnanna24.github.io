@@ -92,3 +92,19 @@ margin: auto;
         width: 90%;
     }
 }
+/* Avatar & Skills */
+.about-avatar { margin: 0.5rem 0 1rem; }
+.avatar { border-radius: 50%; object-fit: cover; aspect-ratio: 1 / 1; }
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.5rem 0.75rem;
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+/* Project card */
+.project { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin: 1rem 0; }
+.project img { max-width: 100%; height: auto; display: block; border-radius: 6px; }
+.project h4 { margin: 0 0 0.5rem; line-height: 1.2; }
+.project p { margin: 0.5rem 0 0; }
