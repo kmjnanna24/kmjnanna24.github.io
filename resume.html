@@ -6,9 +6,11 @@
   <title>Resume — Kristopher Michael Joseph Nanna</title>
 
   <!-- Your site stylesheet -->
-  <link rel="stylesheet" href="../styles.css"> <!-- if this file is in a folder, adjust path accordingly -->
-  <!-- Optional small local styles kept here for resume-specific layout -->
+  <link rel="stylesheet" href="../styles.css"> 
   <style>
+    body, h1, h2, p, td, a {
+  color: #222 !important;
+}
     /* Local resume overrides (keeps page self-contained) */
     .resume-wrapper {
       max-width: 900px;
@@ -45,14 +47,13 @@
     .section-sub { font-weight: 600; margin-bottom: 6px; }
     .meta { color: #555; font-size: 0.92rem; margin-bottom: 8px; }
 
-    /* responsive: stack titles above content on narrow screens */
     @media (max-width: 680px) {
       table.resume td.title { display: block; width: 100%; padding-right: 0; border-top: none; margin-top: 12px; }
       table.resume td.content { display: block; width: 100%; padding-top: 6px; }
       .resume-wrapper { padding: 12px; }
     }
 
-    /* small footer */
+  
     .resume-footer { margin-top: 18px; text-align: center; color: #666; font-size: 0.9rem; }
   </style>
 </head>
