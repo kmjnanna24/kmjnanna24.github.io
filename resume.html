@@ -1,139 +1,70 @@
-<!-- resume_table.html
-     Created with help from ChatGPT
-     Source resume (PDF): /mnt/data/kmjn.resume.pdf
-     :contentReference[oaicite:1]{index=1}
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Resume — Kristopher Michael Joseph Nanna</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Table-based resume styling (move to styles.css if desired) */
-    title {
-        color:#1f1f1f;
-    }
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #222;
-      margin: 24px;
-      background: #fff;
-    }
-    p {
-        color:#1f1f1f;
-    }
-    h1, h2
-    {
-      color: #1f1f1f;
-    }
 
+  <!-- Your site stylesheet -->
+  <link rel="stylesheet" href="../styles.css"> <!-- if this file is in a folder, adjust path accordingly -->
+  <!-- Optional small local styles kept here for resume-specific layout -->
+  <style>
+    /* Local resume overrides (keeps page self-contained) */
     .resume-wrapper {
       max-width: 900px;
       margin: 0 auto;
       padding: 18px;
+      background: #fff;
     }
 
-    .header {
-      text-align: center;
-      margin-bottom: 10px;
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+      margin: 0;
+      background: #f6f8fb;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    .contact {
-      font-size: 0.95rem;
-      color: #444;
-    }
+    .header { text-align: center; margin-bottom: 12px; padding-top: 18px; }
+    .contact { font-size: 0.95rem; color: #444; }
+    a.pdf-link { display: inline-block; margin-top: 10px; font-weight: 600; color: #0b66c3; text-decoration: none; }
+    a.pdf-link:hover { text-decoration: underline; }
 
-    table.resume {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 18px;
-    }
-
-    /* left column titles */
-    table.resume td.title {
-      width: 24%;
-      vertical-align: top;
-      padding: 8px 12px 8px 0;
-      font-weight: 700;
-      color: #1f1f1f;
-    }
-
-    /* right column contents */
-    table.resume td.content {
-      width: 76%;
-      vertical-align: top;
-      padding: 8px 0;
-    }
-
-    /* subtle dividing line between sections */
-    table.resume tr + tr td.title {
-      border-top: 1px solid #e6e6e6;
-      padding-top: 18px;
-    }
+    table.resume { width: 100%; border-collapse: collapse; margin-top: 18px; background: #fff; }
+    table.resume td.title { width: 24%; vertical-align: top; padding: 8px 12px 8px 0; font-weight: 700; color: #111; }
+    table.resume td.content { width: 76%; vertical-align: top; padding: 8px 0; color: #222; }
+    table.resume tr + tr td.title,
     table.resume tr + tr td.content {
       border-top: 1px solid #e6e6e6;
       padding-top: 18px;
     }
 
-    h1.name {
-      margin: 0;
-      font-size: 1.6rem;
-      letter-spacing: 0.5px;
-    }
-
-    ul {
-      margin: 6px 0 12px 18px;
-      padding: 0;
-    }
-
-    .section-sub {
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
-
-    .meta {
-      color: #555;
-      font-size: 0.92rem;
-      margin-bottom: 8px;
-    }
-
-    a.pdf-link {
-      display: inline-block;
-      margin-top: 10px;
-      font-weight: 600;
-      color: #0b66c3;
-      text-decoration: none;
-    }
-    a.pdf-link:hover { text-decoration: underline; }
+    h1.name { margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; }
+    ul { margin: 6px 0 12px 18px; padding: 0; }
+    .section-sub { font-weight: 600; margin-bottom: 6px; }
+    .meta { color: #555; font-size: 0.92rem; margin-bottom: 8px; }
 
     /* responsive: stack titles above content on narrow screens */
     @media (max-width: 680px) {
-      table.resume td.title {
-        display: block;
-        width: 100%;
-        padding-right: 0;
-        border-top: none;
-        margin-top: 12px;
-      }
-      table.resume td.content {
-        display: block;
-        width: 100%;
-        padding-top: 6px;
-      }
+      table.resume td.title { display: block; width: 100%; padding-right: 0; border-top: none; margin-top: 12px; }
+      table.resume td.content { display: block; width: 100%; padding-top: 6px; }
+      .resume-wrapper { padding: 12px; }
     }
+
+    /* small footer */
+    .resume-footer { margin-top: 18px; text-align: center; color: #666; font-size: 0.9rem; }
   </style>
 </head>
 <body>
-  <div class="resume-wrapper">
+  <div class="resume-wrapper" role="document">
     <header class="header" role="banner">
       <h1 class="name">Kristopher Michael Joseph Nanna</h1>
       <div class="contact">
         1409 Whippoorwill Dr, West Columbia, SC 29169 • (864) 347-5136 •
         <a href="mailto:kmjnanna05@icloud.com">kmjnanna05@icloud.com</a>
       </div>
-      <a class="pdf-link" href="/mnt/data/kmjn.resume.pdf" target="_blank" rel="noopener">Download original PDF version</a>
+      <a class="pdf-link" href="files/kmjn.resume.pdf" target="_blank" rel="noopener">Download original PDF version</a>
     </header>
 
     <main role="main">
@@ -214,7 +145,7 @@
           <td class="content">
             <strong>Technical:</strong>
             Helicopter Maintenance, Equipment Operation, Preventative Maintenance, Assembly, Vehicle Testing,
-            Microsoft Office, Adobe Photoshop, Basic Programming (Python, C)
+            Microsoft Office, Adobe Photoshop, Basic Programming
             <br><br>
             <strong>Soft skills:</strong> Problem-Solving, Team Collaboration, Leadership, Attention to Detail,
             Adaptability, Time Management, Strong Work Ethic
@@ -233,15 +164,14 @@
         </tr>
       </table>
 
-      <div style="margin-top:18px; text-align:center; color:#666; font-size:0.9rem;">
+      <div class="resume-footer">
         <a href="index.html">Back to home</a> •
-        <a href="/mnt/data/kmjn.resume.pdf" target="_blank" rel="noopener">Open original PDF</a>
+        <a href="files/kmjn.resume.pdf" target="_blank" rel="noopener">Open original PDF</a>
       </div>
 
     </main>
 
     <footer style="margin-top:18px; text-align:center; color:#777; font-size:0.85rem;">
-      <!-- Attribution per course guidance -->
       Content created with help from ChatGPT.
     </footer>
   </div>
